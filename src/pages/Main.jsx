@@ -10,7 +10,7 @@ export default function Main() {
   return (
     <div>
        <div className='visual-main'>
-        <img src='/images/visual_main_01.jpg' width='100%'/>
+        <img src='/images/visual_main_01.jpg' alt='main_visual' width='100%'/>
     </div>
 
     <div className='container'>
@@ -18,7 +18,7 @@ export default function Main() {
           data.map((value, i)=> {
             return (
               <div className='clo-md-3' key={value.id}>
-              <img src={`/images/best_0${i+1}.png`} width='280px'/>
+              <img src={`/images/best_0${i+1}.png`} alt='best_product' width='280px'/>
               <h3>{value.title}</h3>
               <p>{value.price}</p>
 

@@ -49,6 +49,7 @@ export default function Cart() {
         
       </tbody>
       {
+        // eslint-disable-next-line array-callback-return
         state.cart.map((value,i)=>{
           sum += (state.cart[i].price*state.cart[i].count)
         })
